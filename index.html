@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Casa Copal — Careyes</title>
+<meta name="description" content="Nine-suite private luxury estate perched on the cliffs of Costa Careyes, Mexico's Pacific coast.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -11,10 +12,25 @@
 <body>
 <div class="cursor-dot" id="cursor"></div>
 
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#" onclick="showPage('home')">Home</a>
+  <a href="#" onclick="showPage('house')">The House</a>
+  <a href="#" onclick="showPage('spaces')">Spaces</a>
+  <a href="#" onclick="showPage('suites')">Suites</a>
+  <a href="#" onclick="showPage('gastronomy')">Gastronomy</a>
+  <a href="#" onclick="showPage('experiences')">Experiences</a>
+  <a href="#" onclick="showPage('gallery')">Gallery</a>
+  <a href="#" onclick="showPage('careyes')">Careyes</a>
+  <a href="#" onclick="showPage('contact')" style="color:var(--amber)">Inquire</a>
+</div>
+
+<!-- NAV -->
 <nav id="navbar">
   <a href="#" class="nav-logo" onclick="showPage('home');return false"><img src="images/logo.png" alt="Casa Copal"></a>
   <ul class="nav-links">
     <li><a href="#" onclick="showPage('house');return false">The House</a></li>
+    <li><a href="#" onclick="showPage('spaces');return false">Spaces</a></li>
     <li><a href="#" onclick="showPage('suites');return false">Suites</a></li>
     <li><a href="#" onclick="showPage('gastronomy');return false">Gastronomy</a></li>
     <li><a href="#" onclick="showPage('gallery');return false">Gallery</a></li>
@@ -24,24 +40,25 @@
   <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
 
-<!-- ══════ HOME ══════ -->
+<!-- ══════════════════════════════════════════ HOME ══════════════════════════════════════════ -->
 <div class="page-section active" id="page-home">
+
   <section class="hero">
-    <div class="hero-media"><img src="images/compressed_DJI_20260331192823_0255_D.jpg" alt="Casa Copal aerial"><div class="hero-overlay"></div></div>
+    <div class="hero-media"><img src="images/compressed_DJI_20260331192823_0255_D.jpg" alt="Casa Copal aerial view over Pacific cliffs"><div class="hero-overlay"></div></div>
     <div class="hero-content">
       <p class="hero-eyebrow">Careyes · Pacific Coast · Mexico</p>
       <h1 class="hero-title">Where the jungle<br>whispers to <em>the sea</em></h1>
       <p class="hero-sub">Nine suites, infinite stillness. A private sanctuary where the ancient Copal tree meets the Pacific horizon.</p>
-      <div class="btn-group" style="margin-top:32px;opacity:0;animation:fadeUp .8s 1.2s var(--ease) forwards">
+      <div class="btn-group hero-cta-group">
         <a href="#" class="btn-primary" onclick="showPage('house');return false">Explore the House <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a>
-        <a href="#" class="btn-outline" style="color:var(--sand);border-color:rgba(242,238,235,.4)" onclick="showPage('contact');return false">Inquire</a>
+        <a href="#" class="btn-ghost" onclick="showPage('contact');return false">Inquire</a>
       </div>
     </div>
     <div class="hero-scroll"><span>Scroll</span><div class="scroll-line"></div></div>
   </section>
 
   <section class="section"><div class="intro">
-    <div class="intro-image reveal"><img src="images/compressed_DJI_20260331132521_0191_D.jpg" alt="Facade"></div>
+    <div class="intro-image horizontal reveal"><img src="images/compressed_DJI_20260331132521_0191_D.jpg" alt="Casa Copal facade with pool"></div>
     <div class="intro-text reveal">
       <p class="section-eyebrow">The House</p>
       <h2 class="section-title">A refuge sculpted<br>by <em>nature's hand</em></h2>
@@ -51,156 +68,269 @@
   </div></section>
 
   <div class="gallery-strip"><div class="gallery-strip-inner">
-    <div class="gallery-strip-item"><img src="images/compressed_DSC01602.jpg" alt="Living"></div>
-    <div class="gallery-strip-item"><img src="images/compressed_DSCF4502.jpg" alt="Amber corridor"></div>
-    <div class="gallery-strip-item"><img src="images/compressed_DJI_20260331192451_0248_D.jpg" alt="Palapa"></div>
-    <div class="gallery-strip-item"><img src="images/compressed_DSC01431.jpg" alt="Table setting"></div>
-    <div class="gallery-strip-item"><img src="images/compressed_DSC01460.jpg" alt="Pool"></div>
-    <div class="gallery-strip-item"><img src="images/compressed_DSCF4287.jpg" alt="Rock pool view"></div>
-    <div class="gallery-strip-item"><img src="images/compressed_DSC09821.jpg" alt="Living detail"></div>
-    <div class="gallery-strip-item"><img src="images/compressed_DSC01544.jpg" alt="Rooftop"></div>
-    <div class="gallery-strip-item"><img src="images/compressed_DSCF4198.jpg" alt="Tacos"></div>
-    <div class="gallery-strip-item"><img src="images/compressed_DSC09891.jpg" alt="Lounge"></div>
-    <div class="gallery-strip-item"><img src="images/compressed_DSC01602.jpg" alt="Living"></div>
-    <div class="gallery-strip-item"><img src="images/compressed_DSCF4502.jpg" alt="Amber corridor"></div>
-    <div class="gallery-strip-item"><img src="images/compressed_DJI_20260331192451_0248_D.jpg" alt="Palapa"></div>
-    <div class="gallery-strip-item"><img src="images/compressed_DSC01431.jpg" alt="Table setting"></div>
-    <div class="gallery-strip-item"><img src="images/compressed_DSC01460.jpg" alt="Pool"></div>
-    <div class="gallery-strip-item"><img src="images/compressed_DSCF4287.jpg" alt="Rock pool view"></div>
-    <div class="gallery-strip-item"><img src="images/compressed_DSC09821.jpg" alt="Living detail"></div>
-    <div class="gallery-strip-item"><img src="images/compressed_DSC01544.jpg" alt="Rooftop"></div>
-    <div class="gallery-strip-item"><img src="images/compressed_DSCF4198.jpg" alt="Tacos"></div>
-    <div class="gallery-strip-item"><img src="images/compressed_DSC09891.jpg" alt="Lounge"></div>
+    <div class="gallery-strip-item h-item"><img src="images/compressed_DSC01602.jpg" alt="Living room"></div>
+    <div class="gallery-strip-item v-item"><img src="images/compressed_DSCF4502.jpg" alt="Amber corridor"></div>
+    <div class="gallery-strip-item h-item"><img src="images/compressed_DJI_20260331192451_0248_D.jpg" alt="Palapa sunset"></div>
+    <div class="gallery-strip-item v-item"><img src="images/compressed_DSC01431.jpg" alt="Table setting"></div>
+    <div class="gallery-strip-item h-item"><img src="images/compressed_DSC01460.jpg" alt="Pool deck"></div>
+    <div class="gallery-strip-item v-item"><img src="images/compressed_DSCF4287.jpg" alt="Rock pool view"></div>
+    <div class="gallery-strip-item h-item"><img src="images/compressed_DSC09821.jpg" alt="Living room detail"></div>
+    <div class="gallery-strip-item h-item"><img src="images/compressed_DSC01544.jpg" alt="Rooftop daybed"></div>
+    <div class="gallery-strip-item v-item"><img src="images/compressed_DSCF4198.jpg" alt="Shrimp tacos"></div>
+    <div class="gallery-strip-item h-item"><img src="images/compressed_DSC09891.jpg" alt="Intimate lounge"></div>
+    <!-- duplicate for loop -->
+    <div class="gallery-strip-item h-item"><img src="images/compressed_DSC01602.jpg" alt="Living room"></div>
+    <div class="gallery-strip-item v-item"><img src="images/compressed_DSCF4502.jpg" alt="Amber corridor"></div>
+    <div class="gallery-strip-item h-item"><img src="images/compressed_DJI_20260331192451_0248_D.jpg" alt="Palapa sunset"></div>
+    <div class="gallery-strip-item v-item"><img src="images/compressed_DSC01431.jpg" alt="Table setting"></div>
+    <div class="gallery-strip-item h-item"><img src="images/compressed_DSC01460.jpg" alt="Pool deck"></div>
+    <div class="gallery-strip-item v-item"><img src="images/compressed_DSCF4287.jpg" alt="Rock pool view"></div>
+    <div class="gallery-strip-item h-item"><img src="images/compressed_DSC09821.jpg" alt="Living room detail"></div>
+    <div class="gallery-strip-item h-item"><img src="images/compressed_DSC01544.jpg" alt="Rooftop daybed"></div>
+    <div class="gallery-strip-item v-item"><img src="images/compressed_DSCF4198.jpg" alt="Shrimp tacos"></div>
+    <div class="gallery-strip-item h-item"><img src="images/compressed_DSC09891.jpg" alt="Intimate lounge"></div>
   </div></div>
 
-  <div class="amber-divider"><p class="quote reveal">"The copal smoke rises like a prayer — carrying stories between earth and sky, between what we remember and what we are about to become."</p><p class="quote-attr reveal">— Casa Copal</p></div>
+  <div class="amber-divider">
+    <p class="quote reveal">"The copal smoke rises like a prayer — carrying stories between earth and sky, between what we remember and what we are about to become."</p>
+    <p class="quote-attr reveal">— Casa Copal</p>
+  </div>
 
-  <section class="section suites">
+  <section class="section">
     <div class="suites-header reveal"><div><p class="section-eyebrow">Nine Suites</p><h2 class="section-title">Each room, a different<br><em>conversation with the sea</em></h2></div><a href="#" class="btn-outline" onclick="showPage('suites');return false">View All Suites</a></div>
     <div class="suites-grid">
-      <div class="suite-card reveal" onclick="showPage('suite1')"><div class="suite-card-image"><img src="images/compressed_DSC03768.jpg" alt="Suite 1"><div class="suite-card-overlay"><p class="suite-card-number">01</p><h3 class="suite-card-name">Suite One</h3><p class="suite-card-detail">King Bed · Ocean View</p></div></div></div>
-      <div class="suite-card reveal" onclick="showPage('suite4')"><div class="suite-card-image"><img src="images/compressed_DSC04179.jpg" alt="Suite 4"><div class="suite-card-overlay"><p class="suite-card-number">04</p><h3 class="suite-card-name">Suite Four</h3><p class="suite-card-detail">King Bed · Ocean View</p></div></div></div>
-      <div class="suite-card reveal" onclick="showPage('suite8')"><div class="suite-card-image"><img src="images/compressed_DSC01490.jpg" alt="Suite 8"><div class="suite-card-overlay"><p class="suite-card-number">08</p><h3 class="suite-card-name">Suite Eight</h3><p class="suite-card-detail">King Bed · Ocean View</p></div></div></div>
+      <div class="suite-card reveal" onclick="showPage('suite1')"><div class="suite-card-image"><img src="images/compressed_DSC03768.jpg" alt="Suite One"><div class="suite-card-overlay"><p class="suite-card-number">01</p><h3 class="suite-card-name">Suite One</h3><p class="suite-card-detail">King Bed · Ocean View</p></div></div></div>
+      <div class="suite-card reveal" onclick="showPage('suite4')"><div class="suite-card-image"><img src="images/compressed_DSC04179.jpg" alt="Suite Four"><div class="suite-card-overlay"><p class="suite-card-number">04</p><h3 class="suite-card-name">Suite Four</h3><p class="suite-card-detail">King Bed · Ocean View</p></div></div></div>
+      <div class="suite-card reveal" onclick="showPage('suite8')"><div class="suite-card-image"><img src="images/compressed_DSC01490.jpg" alt="Suite Eight"><div class="suite-card-overlay"><p class="suite-card-number">08</p><h3 class="suite-card-name">Suite Eight</h3><p class="suite-card-detail">King Bed · Ocean View</p></div></div></div>
     </div>
-    <div class="suites-cta reveal" style="margin-top:48px"><a href="#" class="btn-primary" onclick="showPage('suites');return false">Explore All Nine Suites <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div>
+    <div style="text-align:center;margin-top:48px" class="reveal"><a href="#" class="btn-primary" onclick="showPage('suites');return false">Explore All Nine Suites <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div>
   </section>
 
   <section class="section amenities">
     <div class="amenities-inner">
       <div class="amenities-header reveal"><p class="section-eyebrow">Amenities</p><h2 class="section-title">Everything you need.<br><em>Nothing you don't.</em></h2></div>
       <div class="amenities-grid reveal">
-        <div class="amenity-item"><span class="amenity-icon">◎</span><h3 class="amenity-name">Spa & Sauna</h3><p class="amenity-desc">Private sauna with ocean views and Himalayan salt wall.</p></div>
+        <div class="amenity-item"><span class="amenity-icon">◎</span><h3 class="amenity-name">Spa & Sauna</h3><p class="amenity-desc">Private sauna with Himalayan salt wall and ocean views.</p></div>
         <div class="amenity-item"><span class="amenity-icon">△</span><h3 class="amenity-name">Fitness</h3><p class="amenity-desc">Fully equipped gym opening to the jungle canopy.</p></div>
         <div class="amenity-item"><span class="amenity-icon">▽</span><h3 class="amenity-name">Infinity Pool</h3><p class="amenity-desc">Heated pool with sun deck and palapa bar.</p></div>
         <div class="amenity-item"><span class="amenity-icon">◇</span><h3 class="amenity-name">Cinema</h3><p class="amenity-desc">Private screening room with surround sound.</p></div>
-        <div class="amenity-item"><span class="amenity-icon">☽</span><h3 class="amenity-name">Disco</h3><p class="amenity-desc">Intimate nightlife space with pro sound and lighting.</p></div>
+        <div class="amenity-item"><span class="amenity-icon">☽</span><h3 class="amenity-name">Disco</h3><p class="amenity-desc">Intimate nightlife space with professional sound and lighting.</p></div>
         <div class="amenity-item"><span class="amenity-icon">◌</span><h3 class="amenity-name">Palapa</h3><p class="amenity-desc">Open-air living under thatch with ocean panorama.</p></div>
         <div class="amenity-item"><span class="amenity-icon">⌂</span><h3 class="amenity-name">Kitchen & Bar</h3><p class="amenity-desc">Teppanyaki table and premium spirits collection.</p></div>
         <div class="amenity-item"><span class="amenity-icon">✦</span><h3 class="amenity-name">Full Staff 24/7</h3><p class="amenity-desc">Butler, chef, and housekeeping at your service.</p></div>
       </div>
-      <div style="text-align:center;margin-top:48px" class="reveal"><a href="#" class="btn-dark" onclick="showPage('house');return false">Explore All Spaces <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div>
+      <div style="text-align:center;margin-top:48px" class="reveal"><a href="#" class="btn-dark" onclick="showPage('spaces');return false">Explore All Spaces <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div>
     </div>
   </section>
 
-  <div class="dual-image"><div class="dual-image-item"><img src="images/compressed_DSC02269.jpg" alt="Living evening"></div><div class="dual-image-item"><img src="images/compressed_DSC09852.jpg" alt="Fireplace"></div></div>
-
-  <section class="section">
-    <div class="gastronomy-inner">
-      <div class="reveal"><p class="section-eyebrow">Gastronomy</p><h2 class="section-title">The Pacific<br>on your <em>plate</em></h2><p class="section-body" style="margin-top:24px">Our private chef draws from the morning catch and the region's vibrant markets. Every meal at Casa Copal is a celebration of place — from ceviches that taste of the tide to slow-cooked family recipes.</p><div class="btn-group"><a href="#" class="btn-outline" onclick="showPage('gastronomy');return false">Discover Our Cuisine <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div></div>
-      <div class="gastronomy-images reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-        <div class="gastronomy-img" style="grid-row:span 2"><img src="images/compressed_DSCF4198.jpg" alt="Tacos"></div>
-        <div class="gastronomy-img"><img src="images/compressed_DSC01455.jpg" alt="Breakfast"></div>
-        <div class="gastronomy-img"><img src="images/compressed_DSCF4093.jpg" alt="Fruit"></div>
-      </div>
-    </div>
-  </section>
+  <div class="dual-image">
+    <div class="dual-image-item"><img src="images/compressed_DSC02269.jpg" alt="Living room evening"></div>
+    <div class="dual-image-item"><img src="images/compressed_DSC09852.jpg" alt="Living room with fireplace"></div>
+  </div>
 
   <section class="section experiences">
     <div class="experiences-inner">
       <div class="experiences-header reveal"><p class="section-eyebrow">Experiences</p><h2 class="section-title">The coast reveals its secrets<br>to those who <em>seek them</em></h2></div>
       <div class="experiences-cards">
-        <div class="exp-card reveal"><div class="exp-card-image"><img src="images/compressed_DSCF4287.jpg" alt="Ocean view"></div><div class="exp-card-content"><h3 class="exp-card-title">Ocean & Coast</h3><p class="exp-card-desc">Private boat excursions, snorkeling, surfing, and whale watching along the Costalegre.</p></div></div>
-        <div class="exp-card reveal"><div class="exp-card-image"><img src="images/compressed_DSC02051.jpg" alt="Sauna"></div><div class="exp-card-content"><h3 class="exp-card-title">Wellness & Spirit</h3><p class="exp-card-desc">Private sauna, beachside yoga, spa rituals, and sound baths at Copa del Sol.</p></div></div>
-        <div class="exp-card reveal"><div class="exp-card-image"><img src="images/compressed_DSC02137.jpg" alt="Fire pit"></div><div class="exp-card-content"><h3 class="exp-card-title">Culture & Land</h3><p class="exp-card-desc">Horseback riding, polo at Careyes Club, turtle sanctuary, and evenings by the fire pit.</p></div></div>
+        <div class="exp-card reveal"><div class="exp-card-image horizontal"><img src="images/compressed_DSC01460.jpg" alt="Pool and ocean"></div><div class="exp-card-content"><h3 class="exp-card-title">Ocean & Coast</h3><p class="exp-card-desc">Private boat excursions, snorkeling, surfing, and whale watching along the Costalegre.</p></div></div>
+        <div class="exp-card reveal"><div class="exp-card-image horizontal"><img src="images/compressed_DSC02051.jpg" alt="Sauna wellness"></div><div class="exp-card-content"><h3 class="exp-card-title">Wellness & Spirit</h3><p class="exp-card-desc">Private sauna, beachside yoga, spa rituals, and sound baths at Copa del Sol.</p></div></div>
+        <div class="exp-card reveal"><div class="exp-card-image horizontal"><img src="images/compressed_DSC02137.jpg" alt="Fire pit evening"></div><div class="exp-card-content"><h3 class="exp-card-title">Culture & Land</h3><p class="exp-card-desc">Horseback riding, polo at Careyes Club, turtle sanctuary, and evenings by the fire pit.</p></div></div>
       </div>
-      <div style="text-align:center;margin-top:48px" class="reveal"><a href="#" class="btn-primary" onclick="showPage('contact');return false">Plan Your Stay <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div>
+      <div style="text-align:center;margin-top:48px" class="reveal"><a href="#" class="btn-primary" onclick="showPage('contact');return false">Book Casa Copal <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div>
     </div>
   </section>
 
   <section class="section location">
     <div class="location-inner">
-      <div class="location-text reveal"><p class="section-eyebrow">Getting Here</p><h2 class="section-title">Costa Careyes,<br><em>Jalisco</em></h2><p class="section-body">Careyes is a private community on Mexico's Pacific coast. Founded in 1968, it has become a sanctuary for artists, architects, and seekers of an unhurried life.</p>
+      <div class="location-text reveal"><p class="section-eyebrow">Getting Here</p><h2 class="section-title">Costa Careyes,<br><em>Jalisco</em></h2>
+        <p class="section-body">Careyes is a private community on Mexico's Pacific coast. Founded in 1968, it has become a sanctuary for artists, architects, and seekers of an unhurried life.</p>
         <div class="location-details"><div class="location-detail"><p class="location-detail-label">Manzanillo</p><p class="location-detail-value">1 hr 15 min</p></div><div class="location-detail"><p class="location-detail-label">Puerto Vallarta</p><p class="location-detail-value">2 hr 30 min</p></div><div class="location-detail"><p class="location-detail-label">Chamela Strip</p><p class="location-detail-value">10 min private</p></div><div class="location-detail"><p class="location-detail-label">Beach</p><p class="location-detail-value">Walking distance</p></div></div>
         <div class="btn-group"><a href="#" class="btn-dark" onclick="showPage('careyes');return false">Discover Careyes <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div>
       </div>
-      <div class="location-image reveal"><img src="images/compressed_DJI_20260331134333_0214_D.jpg" alt="Full property"></div>
+      <div class="location-image reveal"><img src="images/compressed_DJI_20260331134333_0214_D.jpg" alt="Full property aerial"></div>
     </div>
   </section>
 </div>
 
-<!-- ══════ SUITES GRID ══════ -->
-<div class="page-section" id="page-suites"><div style="height:100px"></div>
+<!-- ══════════════════════════════════════════ THE HOUSE ══════════════════════════════════════════ -->
+<div class="page-section" id="page-house">
+  <div class="mini-hero"><img src="images/compressed_DJI_20260331134333_0214_D.jpg" alt="Casa Copal full property"><div class="mini-hero-overlay"></div><div class="mini-hero-content"><p class="hero-eyebrow">Casa Copal</p><h2>An architectural poem in<br><em>amber and stone</em></h2></div></div>
+  <section class="section"><div class="intro">
+    <div class="intro-text reveal" style="padding-right:40px"><p class="section-eyebrow">The House</p><h2 class="section-title">Where architecture<br>surrenders to <em>landscape</em></h2>
+      <p class="section-body">Casa Copal is a nine-suite private estate perched on the cliffs of Costa Careyes. Its amber-hued walls rise organically from the landscape, crowned by traditional palapa roofs that frame the Pacific like living paintings.</p>
+      <p class="section-body" style="margin-top:20px">Inside, curved sofas mirror the coastline. Porthole windows echo the nautical spirit of the coast. Every piece of furniture has been crafted by local artisans — from the teak dining table to the hand-woven ratán lamps.</p>
+      <div class="btn-group"><a href="#" class="btn-outline" onclick="showPage('spaces');return false">Explore the Spaces <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a><a href="#" class="btn-primary" onclick="showPage('contact');return false">Book Casa Copal</a></div>
+    </div>
+    <div class="intro-image vertical reveal"><img src="images/compressed_DSCF4502.jpg" alt="Amber corridor"></div>
+  </div></section>
+  <div class="dual-image"><div class="dual-image-item"><img src="images/compressed_DSC01602.jpg" alt="Living room day"></div><div class="dual-image-item"><img src="images/compressed_DSC02269.jpg" alt="Living room night"></div></div>
+  <section class="section"><div class="intro" style="direction:rtl"><div class="intro-text reveal" style="direction:ltr;padding-left:40px;padding-right:0"><p class="section-eyebrow">Common Spaces</p><h2 class="section-title">Where conversations<br><em>unfold naturally</em></h2><p class="section-body">The heart of Casa Copal is its grand living room — a sculptural space with a curving sofa, porthole windows, and a fully stocked bar. The teppanyaki dining table seats fourteen for intimate chef-led experiences.</p><p class="section-body" style="margin-top:16px">Step outside to the palapa — an open-air living room under thatch where the ocean breeze becomes part of the conversation.</p><div class="btn-group"><a href="#" class="btn-outline" onclick="showPage('gallery');return false">View Gallery <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div></div><div class="intro-image horizontal reveal" style="direction:ltr"><img src="images/compressed_DSC09821.jpg" alt="Living room detail"></div></div></section>
+  <section class="section" style="padding-top:0"><div class="page-nav" style="max-width:1400px;margin:0 auto"><a href="#" class="page-nav-item" onclick="showPage('home');return false"><span>Previous</span><strong>← Home</strong></a><a href="#" class="page-nav-item" onclick="showPage('spaces');return false"><span>Next</span><strong>Spaces →</strong></a></div></section>
+</div>
+
+<!-- ══════════════════════════════════════════ SPACES ══════════════════════════════════════════ -->
+<div class="page-section" id="page-spaces">
+  <div class="mini-hero"><img src="images/compressed_DJI_20260331192451_0248_D.jpg" alt="Palapa and pool"><div class="mini-hero-overlay"></div><div class="mini-hero-content"><p class="hero-eyebrow">Common Spaces</p><h2>Every corner tells<br><em>a different story</em></h2></div></div>
+
+  <section class="section">
+    <div class="space-block reveal">
+      <div class="space-image horizontal"><img src="images/compressed_DSC01602.jpg" alt="Living room"></div>
+      <div><p class="section-eyebrow">Living Room</p><h2 class="section-title">A sculptural space<br>for <em>gathering</em></h2><p class="section-body" style="margin-top:24px">The grand living room is defined by a curving teak-and-linen sofa, a series of porthole windows that track the sun's arc, and curated art pieces. Floor-to-ceiling wood-framed doors open to the terrace, dissolving the line between indoor and outdoor.</p></div>
+    </div>
+    <div class="space-block reveal">
+      <div class="space-image horizontal"><img src="images/compressed_DSC09861.jpg" alt="Dining and bar"></div>
+      <div><p class="section-eyebrow">Dining & Bar</p><h2 class="section-title">Where every meal<br>becomes a <em>celebration</em></h2><p class="section-body" style="margin-top:24px">A teppanyaki dining table seats fourteen beneath artisanal ratán pendants. Behind, a fully stocked bar with backlit shelving and premium spirits creates the perfect setting for pre-dinner cocktails and late-night conversations.</p></div>
+    </div>
+    <div class="space-block reveal">
+      <div class="space-image horizontal"><img src="images/compressed_DSC01460.jpg" alt="Pool deck"></div>
+      <div><p class="section-eyebrow">Infinity Pool</p><h2 class="section-title">Where water meets<br><em>the horizon</em></h2><p class="section-body" style="margin-top:24px">The heated infinity pool stretches toward the Pacific, flanked by teak camastros dressed in white linen and amber-rolled towels bearing the Casa Copal crest. A palapa bar offers cocktails and shade.</p></div>
+    </div>
+    <div class="space-block reveal">
+      <div class="space-image horizontal"><img src="images/compressed_DSC02051.jpg" alt="Sauna"></div>
+      <div><p class="section-eyebrow">Spa & Sauna</p><h2 class="section-title">Himalayan salt,<br><em>Pacific views</em></h2><p class="section-body" style="margin-top:24px">A private Finnish sauna with a Himalayan salt wall and panoramic window overlooking the ocean. The ultimate post-surf or pre-dinner ritual.</p></div>
+    </div>
+    <div class="space-block reveal">
+      <div class="space-image horizontal"><img src="images/compressed_DSC02137.jpg" alt="Fire pit"></div>
+      <div><p class="section-eyebrow">Fire Pit</p><h2 class="section-title">Evenings under<br><em>Pacific skies</em></h2><p class="section-body" style="margin-top:24px">A sunken circular fire pit in amber-hued concrete overlooks the ocean. The perfect setting for sunset mezcals, stargazing, and stories that last until the early hours.</p></div>
+    </div>
+    <div class="space-block reveal">
+      <div class="space-image horizontal"><img src="images/compressed_DSC01544.jpg" alt="Rooftop"></div>
+      <div><p class="section-eyebrow">Rooftop Terrace</p><h2 class="section-title">The highest point,<br><em>the widest view</em></h2><p class="section-body" style="margin-top:24px">A circular daybed on the rooftop terrace offers 360-degree views of the property, the jungle, and the Pacific coastline. The ideal spot for morning yoga or sunset meditation.</p></div>
+    </div>
+    <div class="space-block reveal">
+      <div class="space-image horizontal"><img src="images/compressed_DSC04380.jpg" alt="Cinema room"></div>
+      <div><p class="section-eyebrow">Cinema</p><h2 class="section-title">Your private<br><em>screening room</em></h2><p class="section-body" style="margin-top:24px">A dedicated cinema room with premium surround sound, plush seating, and a curated film library. Movie nights with the ocean as your soundtrack.</p></div>
+    </div>
+  </section>
+
+  <div style="text-align:center;padding:0 48px 80px" class="reveal"><a href="#" class="btn-primary" onclick="showPage('contact');return false">Book Casa Copal <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div>
+
+  <section class="section" style="padding-top:0"><div class="page-nav" style="max-width:1400px;margin:0 auto"><a href="#" class="page-nav-item" onclick="showPage('house');return false"><span>Previous</span><strong>← The House</strong></a><a href="#" class="page-nav-item" onclick="showPage('suites');return false"><span>Next</span><strong>Suites →</strong></a></div></section>
+</div>
+
+<!-- ══════════════════════════════════════════ SUITES ══════════════════════════════════════════ -->
+<div class="page-section" id="page-suites">
+  <div class="mini-hero"><img src="images/compressed_DJI_20260331132521_0191_D.jpg" alt="Casa Copal suites facade"><div class="mini-hero-overlay"></div><div class="mini-hero-content"><p class="hero-eyebrow">Nine Suites</p><h2>Each room, a different<br><em>conversation with the sea</em></h2></div></div>
   <section class="section"><div style="max-width:1400px;margin:0 auto">
-    <div class="suites-header reveal"><div><p class="section-eyebrow">Nine Suites</p><h2 class="section-title">Each room, a different<br><em>conversation with the sea</em></h2></div></div>
-    <p class="section-body reveal" style="margin-bottom:60px">Every suite has its own chromatic identity — from indigo blues to emerald greens, coral pinks to golden ambers. Artisanal lamps and curated ceramics give each room its own personality.</p>
+    <p class="section-body reveal" style="margin-bottom:60px;text-align:center;max-width:700px;margin-left:auto;margin-right:auto">Every suite has its own chromatic identity — from indigo blues to emerald greens, coral pinks to golden ambers. Casa Copal is available exclusively as a full-property rental.</p>
     <div class="suites-grid">
-      <div class="suite-card reveal" onclick="showPage('suite1')"><div class="suite-card-image"><img src="images/compressed_DSC03768.jpg" alt="S1"><div class="suite-card-overlay"><p class="suite-card-number">01</p><h3 class="suite-card-name">Suite One</h3><p class="suite-card-detail">King · Ocean View</p></div></div></div>
-      <div class="suite-card reveal" onclick="showPage('suite2')"><div class="suite-card-image"><img src="images/compressed_DSC04245.jpg" alt="S2"><div class="suite-card-overlay"><p class="suite-card-number">02</p><h3 class="suite-card-name">Suite Two</h3><p class="suite-card-detail">King · Ocean View</p></div></div></div>
-      <div class="suite-card reveal" onclick="showPage('suite3')"><div class="suite-card-image"><img src="images/compressed_DSC03889.jpg" alt="S3"><div class="suite-card-overlay"><p class="suite-card-number">03</p><h3 class="suite-card-name">Suite Three</h3><p class="suite-card-detail">King · Garden View</p></div></div></div>
-      <div class="suite-card reveal" onclick="showPage('suite4')"><div class="suite-card-image"><img src="images/compressed_DSC09733.jpg" alt="S4"><div class="suite-card-overlay"><p class="suite-card-number">04</p><h3 class="suite-card-name">Suite Four</h3><p class="suite-card-detail">King · Ocean View</p></div></div></div>
-      <div class="suite-card reveal" onclick="showPage('suite5')"><div class="suite-card-image"><img src="images/compressed_DSC09760.jpg" alt="S5"><div class="suite-card-overlay"><p class="suite-card-number">05</p><h3 class="suite-card-name">Suite Five</h3><p class="suite-card-detail">King · Ocean View</p></div></div></div>
-      <div class="suite-card reveal"><div class="suite-card-image"><img src="images/compressed_DSC03794.jpg" alt="S6"><div class="suite-card-overlay"><p class="suite-card-number">06</p><h3 class="suite-card-name">Suite Six</h3><p class="suite-card-detail">King · Garden View</p><p class="suite-placeholder-note">* Photo coming soon</p></div></div></div>
-      <div class="suite-card reveal"><div class="suite-card-image"><img src="images/compressed_DSC09791.jpg" alt="S7"><div class="suite-card-overlay"><p class="suite-card-number">07</p><h3 class="suite-card-name">Suite Seven</h3><p class="suite-card-detail">King · Ocean View</p><p class="suite-placeholder-note">* Photo coming soon</p></div></div></div>
-      <div class="suite-card reveal" onclick="showPage('suite8')"><div class="suite-card-image"><img src="images/compressed_DSC01496.jpg" alt="S8"><div class="suite-card-overlay"><p class="suite-card-number">08</p><h3 class="suite-card-name">Suite Eight</h3><p class="suite-card-detail">King · Ocean View</p></div></div></div>
-      <div class="suite-card reveal"><div class="suite-card-image"><img src="images/compressed_DSC03777.jpg" alt="S9"><div class="suite-card-overlay"><p class="suite-card-number">09</p><h3 class="suite-card-name">Suite Nine</h3><p class="suite-card-detail">King · Garden View</p><p class="suite-placeholder-note">* Photo coming soon</p></div></div></div>
+      <div class="suite-card reveal" onclick="showPage('suite1')"><div class="suite-card-image"><img src="images/compressed_DSC03768.jpg" alt="Suite One"><div class="suite-card-overlay"><p class="suite-card-number">01</p><h3 class="suite-card-name">Suite One</h3><p class="suite-card-detail">King · Ocean View</p></div></div></div>
+      <div class="suite-card reveal" onclick="showPage('suite2')"><div class="suite-card-image"><img src="images/compressed_DSC04245.jpg" alt="Suite Two"><div class="suite-card-overlay"><p class="suite-card-number">02</p><h3 class="suite-card-name">Suite Two</h3><p class="suite-card-detail">King · Ocean View</p></div></div></div>
+      <div class="suite-card reveal" onclick="showPage('suite3')"><div class="suite-card-image"><img src="images/compressed_DSC03889.jpg" alt="Suite Three"><div class="suite-card-overlay"><p class="suite-card-number">03</p><h3 class="suite-card-name">Suite Three</h3><p class="suite-card-detail">King · Garden View</p></div></div></div>
+      <div class="suite-card reveal" onclick="showPage('suite4')"><div class="suite-card-image"><img src="images/compressed_DSC09733.jpg" alt="Suite Four"><div class="suite-card-overlay"><p class="suite-card-number">04</p><h3 class="suite-card-name">Suite Four</h3><p class="suite-card-detail">King · Ocean View</p></div></div></div>
+      <div class="suite-card reveal" onclick="showPage('suite5')"><div class="suite-card-image"><img src="images/compressed_DSC09760.jpg" alt="Suite Five"><div class="suite-card-overlay"><p class="suite-card-number">05</p><h3 class="suite-card-name">Suite Five</h3><p class="suite-card-detail">King · Ocean View</p></div></div></div>
+      <div class="suite-card reveal"><div class="suite-card-image"><img src="images/compressed_DSC03794.jpg" alt="Suite Six"><div class="suite-card-overlay"><p class="suite-card-number">06</p><h3 class="suite-card-name">Suite Six</h3><p class="suite-card-detail">King · Garden View</p><p class="suite-placeholder-note">* Photo coming soon</p></div></div></div>
+      <div class="suite-card reveal"><div class="suite-card-image"><img src="images/compressed_DSC09791.jpg" alt="Suite Seven"><div class="suite-card-overlay"><p class="suite-card-number">07</p><h3 class="suite-card-name">Suite Seven</h3><p class="suite-card-detail">King · Ocean View</p><p class="suite-placeholder-note">* Photo coming soon</p></div></div></div>
+      <div class="suite-card reveal" onclick="showPage('suite8')"><div class="suite-card-image"><img src="images/compressed_DSC01496.jpg" alt="Suite Eight"><div class="suite-card-overlay"><p class="suite-card-number">08</p><h3 class="suite-card-name">Suite Eight</h3><p class="suite-card-detail">King · Ocean View</p></div></div></div>
+      <div class="suite-card reveal"><div class="suite-card-image"><img src="images/compressed_DSC03777.jpg" alt="Suite Nine"><div class="suite-card-overlay"><p class="suite-card-number">09</p><h3 class="suite-card-name">Suite Nine</h3><p class="suite-card-detail">King · Garden View</p><p class="suite-placeholder-note">* Photo coming soon</p></div></div></div>
     </div>
-    <div style="text-align:center;margin-top:60px" class="reveal"><a href="#" class="btn-primary" onclick="showPage('contact');return false">Inquire About Availability <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div>
-    <div class="page-nav"><a href="#" class="page-nav-item" onclick="showPage('house');return false"><span>Previous</span><strong>← The House</strong></a><a href="#" class="page-nav-item" onclick="showPage('gastronomy');return false"><span>Next</span><strong>Gastronomy →</strong></a></div>
+    <div style="text-align:center;margin-top:60px" class="reveal"><a href="#" class="btn-primary" onclick="showPage('contact');return false">Book Casa Copal <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div>
+    <div class="page-nav"><a href="#" class="page-nav-item" onclick="showPage('spaces');return false"><span>Previous</span><strong>← Spaces</strong></a><a href="#" class="page-nav-item" onclick="showPage('gastronomy');return false"><span>Next</span><strong>Gastronomy →</strong></a></div>
   </div></section>
 </div>
 
-<!-- ══════ GASTRONOMY ══════ -->
-<div class="page-section" id="page-gastronomy"><div style="height:100px"></div>
+<!-- SUITE DETAIL PAGES -->
+<div class="page-section" id="page-suite1"><div style="height:100px"></div><section class="section"><div class="suite-detail"><a href="#" class="text-link suite-back" onclick="showPage('suites');return false"><svg width="20" height="12" viewBox="0 0 20 12" fill="none" style="transform:rotate(180deg)"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg> All Suites</a><div class="suite-detail-hero reveal"><img src="images/compressed_DSC03768.jpg" alt="Suite One"></div><div class="suite-detail-grid"><div class="reveal"><p class="section-eyebrow">Suite 01</p><h2 class="section-title">Suite One</h2><p class="section-body" style="margin-top:24px">Dressed in indigo blue, Suite One opens onto a private terrace with unobstructed Pacific views. Hand-embroidered Mexican textiles, artisanal ratán pendant lamps, and a marble-top writing desk facing the sea.</p><p class="section-body" style="margin-top:16px">King Bed · Ocean View · Private Terrace · Ensuite Bathroom · Air Conditioning · Smart TV</p><div class="btn-group"><a href="#" class="btn-primary" onclick="showPage('contact');return false">Book Casa Copal <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div></div><div class="suite-detail-images reveal"><div class="sd-img"><img src="images/compressed_DSC03777.jpg" alt="Suite One angle 2"></div><div class="sd-img"><img src="images/compressed_DSC03794.jpg" alt="Suite One angle 3"></div></div></div></div></section></div>
+
+<div class="page-section" id="page-suite2"><div style="height:100px"></div><section class="section"><div class="suite-detail"><a href="#" class="text-link suite-back" onclick="showPage('suites');return false"><svg width="20" height="12" viewBox="0 0 20 12" fill="none" style="transform:rotate(180deg)"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg> All Suites</a><div class="suite-detail-hero reveal"><img src="images/compressed_DSC04245.jpg" alt="Suite Two"></div><div class="suite-detail-grid"><div class="reveal"><p class="section-eyebrow">Suite 02</p><h2 class="section-title">Suite Two</h2><p class="section-body" style="margin-top:24px">Emerald green defines this serene retreat. A daybed nook with illuminated wall niches, curated ceramics, and a sculptural mushroom lamp. Floor-to-ceiling windows reveal palapa rooftops and the Pacific beyond.</p><p class="section-body" style="margin-top:16px">King Bed · Ocean View · Private Terrace · Ensuite Bathroom · Air Conditioning · Smart TV</p><div class="btn-group"><a href="#" class="btn-primary" onclick="showPage('contact');return false">Book Casa Copal <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div></div><div class="suite-detail-images reveal"><div class="sd-img"><img src="images/compressed_DSC03706.jpg" alt="Suite Two angle 2"></div><div class="sd-img"><img src="images/compressed_DSC01397.jpg" alt="Bathroom"></div></div></div></div></section></div>
+
+<div class="page-section" id="page-suite3"><div style="height:100px"></div><section class="section"><div class="suite-detail"><a href="#" class="text-link suite-back" onclick="showPage('suites');return false"><svg width="20" height="12" viewBox="0 0 20 12" fill="none" style="transform:rotate(180deg)"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg> All Suites</a><div class="suite-detail-hero reveal"><img src="images/compressed_DSC03889.jpg" alt="Suite Three"></div><div class="suite-detail-grid"><div class="reveal"><p class="section-eyebrow">Suite 03</p><h2 class="section-title">Suite Three</h2><p class="section-body" style="margin-top:24px">A coral-pink arched doorway marks the entrance. Rustic wooden headboard, hand-embroidered linens with red accents, and a woven armchair invite total relaxation.</p><p class="section-body" style="margin-top:16px">King Bed · Garden View · Private Terrace · Ensuite Bathroom · Air Conditioning · Smart TV</p><div class="btn-group"><a href="#" class="btn-primary" onclick="showPage('contact');return false">Book Casa Copal <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div></div><div class="suite-detail-images reveal"><div class="sd-img"><img src="images/compressed_DSC03924.jpg" alt="Suite Three angle 2"></div><div class="sd-img"><img src="images/compressed_DSC03889.jpg" alt="Suite Three detail"></div></div></div></div></section></div>
+
+<div class="page-section" id="page-suite4"><div style="height:100px"></div><section class="section"><div class="suite-detail"><a href="#" class="text-link suite-back" onclick="showPage('suites');return false"><svg width="20" height="12" viewBox="0 0 20 12" fill="none" style="transform:rotate(180deg)"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg> All Suites</a><div class="suite-detail-hero reveal"><img src="images/compressed_DSC04179.jpg" alt="Suite Four"></div><div class="suite-detail-grid"><div class="reveal"><p class="section-eyebrow">Suite 04</p><h2 class="section-title">Suite Four</h2><p class="section-body" style="margin-top:24px">The golden master suite. Amber and gold textiles complement the Copal brand identity. Curved walls create an organic sanctuary. A writing desk faces the full Pacific panorama.</p><p class="section-body" style="margin-top:16px">King Bed · Ocean View · Private Terrace · Daybed · Writing Desk · Ensuite · AC · Smart TV</p><div class="btn-group"><a href="#" class="btn-primary" onclick="showPage('contact');return false">Book Casa Copal <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div></div><div class="suite-detail-images reveal"><div class="sd-img"><img src="images/compressed_DSC09731.jpg" alt="Suite Four angle 2"></div><div class="sd-img"><img src="images/compressed_DSC09733.jpg" alt="Suite Four angle 3"></div><div class="sd-img"><img src="images/compressed_DSC041792.jpg" alt="Suite Four angle 4"></div><div class="sd-img"><img src="images/compressed_DSC04179.jpg" alt="Suite Four view"></div></div></div></div></section></div>
+
+<div class="page-section" id="page-suite5"><div style="height:100px"></div><section class="section"><div class="suite-detail"><a href="#" class="text-link suite-back" onclick="showPage('suites');return false"><svg width="20" height="12" viewBox="0 0 20 12" fill="none" style="transform:rotate(180deg)"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg> All Suites</a><div class="suite-detail-hero reveal"><img src="images/compressed_DSC09760.jpg" alt="Suite Five"></div><div class="suite-detail-grid"><div class="reveal"><p class="section-eyebrow">Suite 05</p><h2 class="section-title">Suite Five</h2><p class="section-body" style="margin-top:24px">Sage green and olive tones bring the jungle indoors. Curved boucle armchair, ceramic art in wall niches, terracotta lamps, and a private terrace with ocean views.</p><p class="section-body" style="margin-top:16px">King Bed · Ocean View · Private Terrace · Ensuite Bathroom · Air Conditioning · Smart TV</p><div class="btn-group"><a href="#" class="btn-primary" onclick="showPage('contact');return false">Book Casa Copal <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div></div><div class="suite-detail-images reveal"><div class="sd-img"><img src="images/compressed_DSC09791.jpg" alt="Suite Five angle 2"></div><div class="sd-img"><img src="images/compressed_DSC09760.jpg" alt="Suite Five detail"></div></div></div></div></section></div>
+
+<div class="page-section" id="page-suite8"><div style="height:100px"></div><section class="section"><div class="suite-detail"><a href="#" class="text-link suite-back" onclick="showPage('suites');return false"><svg width="20" height="12" viewBox="0 0 20 12" fill="none" style="transform:rotate(180deg)"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg> All Suites</a><div class="suite-detail-hero reveal"><img src="images/compressed_DSC01490.jpg" alt="Suite Eight"></div><div class="suite-detail-grid"><div class="reveal"><p class="section-eyebrow">Suite 08</p><h2 class="section-title">Suite Eight</h2><p class="section-body" style="margin-top:24px">A white arched headboard and porthole window define this charming retreat. Yellow-striped Mexican textiles with handmade pompom details. Opens to a private rooftop terrace with circular daybed.</p><p class="section-body" style="margin-top:16px">King Bed · Ocean View · Rooftop Terrace · Ensuite Bathroom · Air Conditioning · Smart TV</p><div class="btn-group"><a href="#" class="btn-primary" onclick="showPage('contact');return false">Book Casa Copal <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div></div><div class="suite-detail-images reveal"><div class="sd-img"><img src="images/compressed_DSC01496.jpg" alt="Suite Eight angle 2"></div><div class="sd-img"><img src="images/compressed_DSC01535.jpg" alt="Suite Eight angle 3"></div><div class="sd-img"><img src="images/compressed_DSC01544.jpg" alt="Rooftop terrace"></div><div class="sd-img"><img src="images/compressed_DSC01490.jpg" alt="Suite Eight detail"></div></div></div></div></section></div>
+
+<!-- ══════════════════════════════════════════ GASTRONOMY ══════════════════════════════════════════ -->
+<div class="page-section" id="page-gastronomy">
+  <div class="mini-hero"><img src="images/compressed_DSC09861.jpg" alt="Dining room and bar"><div class="mini-hero-overlay"></div><div class="mini-hero-content"><p class="hero-eyebrow">Gastronomy</p><h2>The Pacific on<br>your <em>plate</em></h2></div></div>
+
   <section class="section"><div style="max-width:1400px;margin:0 auto">
-    <div class="reveal" style="text-align:center;margin-bottom:80px"><p class="section-eyebrow">Gastronomy</p><h2 class="section-title">The Pacific on your <em>plate</em></h2><p class="section-body" style="margin:20px auto 0;text-align:center;max-width:600px">Our private chef transforms local ingredients into art. Fresh seafood from the Pacific, organic produce from nearby markets, and recipes rooted in the traditions of Costalegre.</p></div>
-    <div class="gastro-grid reveal">
-      <div class="gastro-item"><img src="images/compressed_DSCF4198.jpg" alt="Tacos"></div>
-      <div class="gastro-item"><img src="images/compressed_DSC01431.jpg" alt="Table setting"></div>
-      <div class="gastro-item"><img src="images/compressed_DSCF4065.jpg" alt="Breakfast"></div>
-      <div class="gastro-item"><img src="images/compressed_DSCF4093.jpg" alt="Fruit"></div>
-      <div class="gastro-item"><img src="images/compressed_DSCF4215.jpg" alt="Taco detail"></div>
-      <div class="gastro-item"><img src="images/compressed_DSCF4116.jpg" alt="Full table"></div>
+    <div class="intro">
+      <div class="intro-text reveal" style="padding-right:40px"><p class="section-eyebrow">Private Chef</p><h2 class="section-title">Every meal, a<br><em>curated experience</em></h2>
+        <p class="section-body" style="margin-top:24px">Our private chef transforms local ingredients into art. Fresh seafood from the Pacific, organic produce from nearby markets, and recipes rooted in the traditions of Costalegre. From breakfast on the terrace to candlelit dinners under the palapa.</p>
+        <p class="section-body" style="margin-top:16px">Dietary preferences, private celebrations, cooking classes — every culinary detail is yours to design.</p>
+        <div class="btn-group"><a href="#" class="btn-primary" onclick="showPage('contact');return false">Plan Your Menu <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div>
+      </div>
+      <div class="intro-image vertical reveal"><img src="images/compressed_DSCF4198.jpg" alt="Shrimp tacos"></div>
     </div>
   </div></section>
-  <div class="dual-image"><div class="dual-image-item"><img src="images/compressed_DSCF4077.jpg" alt="Huevos breakfast"></div><div class="dual-image-item"><img src="images/compressed_DSC09861.jpg" alt="Dining bar"></div></div>
+
+  <div class="gastro-grid" style="padding:0 48px">
+    <div class="gastro-item vertical reveal"><img src="images/compressed_DSCF4065.jpg" alt="Breakfast pancakes"></div>
+    <div class="gastro-item vertical reveal"><img src="images/compressed_DSC01431.jpg" alt="Table setting"></div>
+    <div class="gastro-item vertical reveal"><img src="images/compressed_DSCF4093.jpg" alt="Tropical fruit"></div>
+    <div class="gastro-item vertical reveal"><img src="images/compressed_DSCF4077.jpg" alt="Mexican breakfast"></div>
+    <div class="gastro-item vertical reveal"><img src="images/compressed_DSCF4215.jpg" alt="Taco close-up"></div>
+    <div class="gastro-item vertical reveal"><img src="images/compressed_DSCF4113.jpg" alt="Place setting detail"></div>
+  </div>
+
+  <!-- RESTAURANT LIST -->
   <section class="section"><div style="max-width:1400px;margin:0 auto">
-    <div class="intro" style="direction:rtl"><div class="intro-text reveal" style="direction:ltr;padding-left:40px;padding-right:0"><p class="section-eyebrow">Private Dining</p><h2 class="section-title">Every meal, a<br><em>curated experience</em></h2><p class="section-body">From breakfast on the terrace with freshly squeezed juices and artisanal Mexican ceramics, to a candlelit dinner under the palapa — our chef and butler orchestrate every culinary moment with care.</p><p class="section-body" style="margin-top:16px">Dietary preferences, allergies, private celebrations — every detail is yours to design.</p><div class="btn-group"><a href="#" class="btn-primary" onclick="showPage('contact');return false">Plan Your Menu <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div></div>
-    <div class="intro-image reveal" style="direction:ltr"><img src="images/compressed_DSCF4113.jpg" alt="Table setting detail"></div></div>
-    <div class="page-nav"><a href="#" class="page-nav-item" onclick="showPage('suites');return false"><span>Previous</span><strong>← Suites</strong></a><a href="#" class="page-nav-item" onclick="showPage('gallery');return false"><span>Next</span><strong>Gallery →</strong></a></div>
+    <div class="reveal" style="margin-bottom:60px"><p class="section-eyebrow">Dining in Careyes</p><h2 class="section-title">The Dining <em>List</em></h2><p class="section-body" style="margin-top:16px">A curated collection of the finest culinary destinations in Costalegre. From iconic seaside institutions to hidden artistic gems.</p></div>
+    <div class="restaurant-list">
+      <div class="restaurant-item reveal"><div class="restaurant-name">Casa de Nada</div><div class="restaurant-desc">A celebration of the eclectic and the artistic. This vibrant Mexican cantina offers creative small plates and antojitos paired with a curated selection of spirits. A place for conversation and discovery.</div></div>
+      <div class="restaurant-item reveal"><div class="restaurant-name">La Coscolina</div><div class="restaurant-desc">A charming coastal corner that feels like a Mediterranean escape. Known for artisanal thin-crust pizzas and vibrant salads. Its bohemian atmosphere makes it a favorite for casual gatherings and slow afternoons.</div></div>
+      <div class="restaurant-item reveal"><div class="restaurant-name">La Duna</div><div class="restaurant-desc">Where architectural beauty meets gastronomic innovation. Sophisticated open-air dining with fusion cuisine that balances bold international flavors with local textures. The ideal setting for a sunset dinner overlooking the ocean.</div></div>
+      <div class="restaurant-item reveal"><div class="restaurant-name">Lilo Beach Club</div><div class="restaurant-desc">The epitome of modern coastal living. Fresh, healthy bowls, premium seafood, and tropical mixology served in a setting that defines the new luxury of the Mexican Pacific.</div></div>
+      <div class="restaurant-item reveal"><div class="restaurant-name">Malabar</div><div class="restaurant-desc">The ultimate destination for sophisticated relaxation. Expert mixology and curated bites designed for those who appreciate the art of the cocktail and the beauty of a well-timed aperitivo.</div></div>
+      <div class="restaurant-item reveal"><div class="restaurant-name">Playa Rosa Beach Club</div><div class="restaurant-desc">The heartbeat of the coast. Refined Mediterranean menu enjoyed with your feet in the sand beneath iconic pink architecture. From fresh ceviches to exquisite grilled lobsters — timeless luxury meets simplicity.</div></div>
+      <div class="restaurant-item reveal"><div class="restaurant-name">Pueblo 25</div><div class="restaurant-desc">A sanctuary for the culinary purist. Celebrated for its seasonal farm-to-table ingredients and daily Pacific catches. Mexican heritage reimagined with contemporary finesse.</div></div>
+      <div class="restaurant-item reveal"><div class="restaurant-name">Shio Sushi</div><div class="restaurant-desc">Japanese precision meets Mexican ingredients. Clean, minimalist sushi and sashimi emphasizing the absolute freshness of the local catch. An elegant choice for those seeking a lighter alternative.</div></div>
+    </div>
+    <div class="page-nav"><a href="#" class="page-nav-item" onclick="showPage('suites');return false"><span>Previous</span><strong>← Suites</strong></a><a href="#" class="page-nav-item" onclick="showPage('experiences');return false"><span>Next</span><strong>Experiences →</strong></a></div>
   </div></section>
 </div>
 
-<!-- ══════ GALLERY ══════ -->
-<div class="page-section" id="page-gallery"><div style="height:100px"></div>
+<!-- ══════════════════════════════════════════ EXPERIENCES ══════════════════════════════════════════ -->
+<div class="page-section" id="page-experiences">
+  <div class="mini-hero"><img src="images/compressed_DSC02137.jpg" alt="Fire pit at sunset"><div class="mini-hero-overlay"></div><div class="mini-hero-content"><p class="hero-eyebrow">Experiences</p><h2>Careyes unfolds for those<br>who <em>dare to explore</em></h2></div></div>
+
   <section class="section"><div style="max-width:1400px;margin:0 auto">
-    <div class="reveal" style="text-align:center;margin-bottom:80px"><p class="section-eyebrow">Gallery</p><h2 class="section-title">A visual journey through<br><em>Casa Copal</em></h2></div>
+    <p class="section-body reveal" style="margin-bottom:80px;text-align:center;max-width:700px;margin-left:auto;margin-right:auto">From the depths of the Pacific to the peaks of the Sierra Madre, Casa Copal is your gateway to the most extraordinary experiences Costalegre has to offer.</p>
+    <div class="experiences-cards">
+      <div class="exp-card reveal"><div class="exp-card-image horizontal"><img src="images/compressed_DSC01460.jpg" alt="Pool ocean"></div><div class="exp-card-content"><h3 class="exp-card-title">Ocean & Coast</h3><p class="exp-card-desc">Private boat excursions along hidden bays. Snorkeling, surfing, deep-sea fishing, and whale watching in season. Kayaking and paddleboarding from private access.</p></div></div>
+      <div class="exp-card reveal"><div class="exp-card-image horizontal"><img src="images/compressed_DSC02051.jpg" alt="Sauna"></div><div class="exp-card-content"><h3 class="exp-card-title">Wellness & Spirit</h3><p class="exp-card-desc">Private sauna with Himalayan salt wall. Sound baths at Copa del Sol. Beachside yoga at dawn. Personalized massage and spa treatments by the pool.</p></div></div>
+      <div class="exp-card reveal"><div class="exp-card-image horizontal"><img src="images/compressed_DSC02137.jpg" alt="Fire pit"></div><div class="exp-card-content"><h3 class="exp-card-title">Culture & Land</h3><p class="exp-card-desc">Horseback riding on pristine beaches. Polo matches at Careyes Club. Turtle sanctuary visits during nesting season. Art walks and cosmic installations.</p></div></div>
+    </div>
+
+    <div class="reveal" style="margin-top:100px;margin-bottom:40px"><p class="section-eyebrow">Signature Experiences</p><h2 class="section-title">The best of <em>Careyes</em></h2></div>
+
+    <div class="restaurant-list">
+      <div class="restaurant-item reveal"><div class="restaurant-name">Copa del Sol</div><div class="restaurant-desc">Careyes' iconic open-air amphitheater. Attend sunset sound baths, live music performances, and cultural gatherings in one of Mexico's most dramatic natural settings.</div></div>
+      <div class="restaurant-item reveal"><div class="restaurant-name">Polo at Careyes</div><div class="restaurant-desc">Watch world-class polo matches at the Careyes Club, or take introductory lessons on horseback. A signature experience that defines the spirit of the coast.</div></div>
+      <div class="restaurant-item reveal"><div class="restaurant-name">Turtle Sanctuary</div><div class="restaurant-desc">During nesting season, participate in the release of baby sea turtles on Careyes' protected beaches. A transformative experience for guests of all ages.</div></div>
+      <div class="restaurant-item reveal"><div class="restaurant-name">Art & Architecture</div><div class="restaurant-desc">Explore Careyes' cosmic art installations, colorful casitas designed by world-renowned architects, and private collections that dot the coastline. A walking gallery in nature.</div></div>
+      <div class="restaurant-item reveal"><div class="restaurant-name">Private Excursions</div><div class="restaurant-desc">From yacht charters along the Costalegre to guided jungle hikes and visits to artisan villages in the Sierra Madre. Our concierge curates every adventure to your interests.</div></div>
+    </div>
+
+    <div style="text-align:center;margin-top:60px" class="reveal"><a href="#" class="btn-primary" onclick="showPage('contact');return false">Book Casa Copal <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div>
+    <div class="page-nav"><a href="#" class="page-nav-item" onclick="showPage('gastronomy');return false"><span>Previous</span><strong>← Gastronomy</strong></a><a href="#" class="page-nav-item" onclick="showPage('gallery');return false"><span>Next</span><strong>Gallery →</strong></a></div>
+  </div></section>
+</div>
+
+<!-- ══════════════════════════════════════════ GALLERY ══════════════════════════════════════════ -->
+<div class="page-section" id="page-gallery">
+  <div class="mini-hero"><img src="images/compressed_DJI_20260331192155_0229_D.jpg" alt="Casa Copal top down"><div class="mini-hero-overlay"></div><div class="mini-hero-content"><p class="hero-eyebrow">Gallery</p><h2>A visual journey through<br><em>Casa Copal</em></h2></div></div>
+  <section class="section"><div style="max-width:1400px;margin:0 auto">
     <div class="gallery-page-grid reveal">
-      <div class="gallery-page-item"><img src="images/compressed_DJI_20260331192823_0255_D.jpg" alt="Aerial"></div>
-      <div class="gallery-page-item"><img src="images/compressed_DSC01602.jpg" alt="Living"></div>
+      <div class="gallery-page-item"><img src="images/compressed_DJI_20260331192823_0255_D.jpg" alt="Aerial cliff"></div>
+      <div class="gallery-page-item"><img src="images/compressed_DSC01602.jpg" alt="Living room"></div>
       <div class="gallery-page-item"><img src="images/compressed_DSCF4502.jpg" alt="Amber corridor"></div>
       <div class="gallery-page-item"><img src="images/compressed_DSC03768.jpg" alt="Suite 1"></div>
       <div class="gallery-page-item"><img src="images/compressed_DJI_20260331134333_0214_D.jpg" alt="Full property"></div>
       <div class="gallery-page-item"><img src="images/compressed_DSC09861.jpg" alt="Bar"></div>
       <div class="gallery-page-item"><img src="images/compressed_DSC01490.jpg" alt="Suite 8"></div>
-      <div class="gallery-page-item"><img src="images/compressed_DSCF4287.jpg" alt="Rock ocean"></div>
+      <div class="gallery-page-item"><img src="images/compressed_DSCF4287.jpg" alt="Rock ocean view"></div>
       <div class="gallery-page-item"><img src="images/compressed_DSC04245.jpg" alt="Suite 2"></div>
       <div class="gallery-page-item"><img src="images/compressed_DSC02137.jpg" alt="Fire pit"></div>
       <div class="gallery-page-item"><img src="images/compressed_DSC09821.jpg" alt="Living detail"></div>
       <div class="gallery-page-item"><img src="images/compressed_DSCF4198.jpg" alt="Tacos"></div>
       <div class="gallery-page-item"><img src="images/compressed_DJI_20260331132521_0191_D.jpg" alt="Facade"></div>
       <div class="gallery-page-item"><img src="images/compressed_DSC03889.jpg" alt="Suite 3"></div>
-      <div class="gallery-page-item"><img src="images/compressed_DSC01460.jpg" alt="Pool"></div>
-      <div class="gallery-page-item"><img src="images/compressed_DSC01547.jpg" alt="Poolside detail"></div>
+      <div class="gallery-page-item"><img src="images/compressed_DSC01460.jpg" alt="Pool deck"></div>
+      <div class="gallery-page-item"><img src="images/compressed_DSC01547.jpg" alt="Poolside"></div>
       <div class="gallery-page-item"><img src="images/compressed_DSC09733.jpg" alt="Suite 4"></div>
       <div class="gallery-page-item"><img src="images/compressed_DSCF4541.jpg" alt="Branded towels"></div>
       <div class="gallery-page-item"><img src="images/compressed_DSC02051.jpg" alt="Sauna"></div>
@@ -208,7 +338,7 @@
       <div class="gallery-page-item"><img src="images/compressed_DSC09760.jpg" alt="Suite 5"></div>
       <div class="gallery-page-item"><img src="images/compressed_DJI_20260331192451_0248_D.jpg" alt="Palapa sunset"></div>
       <div class="gallery-page-item"><img src="images/compressed_DSC01688.jpg" alt="Hexagonal table"></div>
-      <div class="gallery-page-item"><img src="images/compressed_DSC09841.jpg" alt="Green door detail"></div>
+      <div class="gallery-page-item"><img src="images/compressed_DSC09841.jpg" alt="Green door"></div>
       <div class="gallery-page-item"><img src="images/compressed_DSC02269.jpg" alt="Living night"></div>
       <div class="gallery-page-item"><img src="images/compressed_DSC01544.jpg" alt="Rooftop"></div>
       <div class="gallery-page-item"><img src="images/compressed_DSC01397.jpg" alt="Shower"></div>
@@ -216,87 +346,82 @@
       <div class="gallery-page-item"><img src="images/compressed_DSC03706.jpg" alt="Suite 2 green"></div>
       <div class="gallery-page-item"><img src="images/compressed_DSC09891.jpg" alt="Lounge"></div>
     </div>
-    <div style="text-align:center;margin-top:60px" class="reveal"><a href="#" class="btn-primary" onclick="showPage('contact');return false">Inquire About Casa Copal <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div>
+    <div style="text-align:center;margin-top:60px" class="reveal"><a href="#" class="btn-primary" onclick="showPage('contact');return false">Book Casa Copal <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div>
   </div></section>
 </div>
 
-<!-- ══════ CAREYES ══════ -->
-<div class="page-section" id="page-careyes"><div style="height:100px"></div>
+<!-- ══════════════════════════════════════════ CAREYES ══════════════════════════════════════════ -->
+<div class="page-section" id="page-careyes">
+  <div class="mini-hero"><img src="images/compressed_DJI_20260331192823_0255_D.jpg" alt="Careyes coastline"><div class="mini-hero-overlay"></div><div class="mini-hero-content"><p class="hero-eyebrow">The Destination</p><h2>Costa Careyes,<br><em>Jalisco, Mexico</em></h2></div></div>
   <section class="section"><div class="intro">
-    <div class="intro-image reveal"><img src="images/compressed_DJI_20260331192823_0255_D.jpg" alt="Coastline"></div>
-    <div class="intro-text reveal"><p class="section-eyebrow">The Destination</p><h2 class="section-title">Costa Careyes,<br><em>Jalisco, Mexico</em></h2><p class="section-body">Founded by Gian Franco Brignone in 1968, Careyes has become a sanctuary for artists, architects, and seekers of an unhurried life. Its colorful casitas, cosmic art installations, and pristine beaches have made it one of the world's best-kept secrets.</p><p class="section-body" style="margin-top:20px">The characters you'll meet are as colorful as the place itself — eccentric, elegant, multi-lingual, and always with more than a story to tell.</p><div class="btn-group"><a href="#" class="btn-primary" onclick="showPage('contact');return false">Plan Your Visit <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div></div>
+    <div class="intro-image vertical reveal"><img src="images/compressed_DSCF4287.jpg" alt="Pacific view"></div>
+    <div class="intro-text reveal"><p class="section-eyebrow">Careyes</p><h2 class="section-title">Where the jungle<br>meets <em>the sea</em></h2>
+      <p class="section-body">Founded by Gian Franco Brignone in 1968, Costa Careyes has become a sanctuary for artists, architects, and seekers of an unhurried life. Its colorful casitas, cosmic art installations, and pristine beaches have made it one of the world's best-kept secrets.</p>
+      <p class="section-body" style="margin-top:20px">The characters you'll meet are as colorful as the place itself — eccentric, elegant, multi-lingual, and always with more than a story to tell.</p>
+      <div class="btn-group"><a href="#" class="btn-primary" onclick="showPage('contact');return false">Book Casa Copal <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a><a href="#" class="btn-outline" onclick="showPage('experiences');return false">Experiences</a></div>
+    </div>
   </div></section>
+
   <section class="section location"><div class="location-inner">
     <div class="location-text reveal"><p class="section-eyebrow">Getting Here</p><h2 class="section-title">Your journey<br><em>begins here</em></h2><p class="section-body">Casa Copal can arrange all transportation from your point of arrival.</p>
       <div class="location-details"><div class="location-detail"><p class="location-detail-label">Manzanillo</p><p class="location-detail-value">1 hr 15 min drive</p></div><div class="location-detail"><p class="location-detail-label">Puerto Vallarta</p><p class="location-detail-value">2 hr 30 min drive</p></div><div class="location-detail"><p class="location-detail-label">Chamela Strip</p><p class="location-detail-value">10 min private flight</p></div><div class="location-detail"><p class="location-detail-label">Beach</p><p class="location-detail-value">Walking distance</p></div></div></div>
-    <div class="location-image reveal"><img src="images/compressed_DJI_20260331134333_0214_D.jpg" alt="Property"></div>
+    <div class="location-image reveal"><img src="images/compressed_DJI_20260331134333_0214_D.jpg" alt="Full property aerial"></div>
   </div></section>
 </div>
 
-<!-- ══════ THE HOUSE ══════ -->
-<div class="page-section" id="page-house"><div style="height:100px"></div>
-  <section class="section"><div class="intro">
-    <div class="intro-text reveal" style="padding-right:40px"><p class="section-eyebrow">The House</p><h2 class="section-title">An architectural poem<br>written in <em>amber and stone</em></h2><p class="section-body">Casa Copal is a nine-suite private estate perched on the cliffs of Costa Careyes. Its amber-hued walls rise organically from the landscape, crowned by traditional palapa roofs that frame the Pacific like living paintings.</p><p class="section-body" style="margin-top:20px">Inside, curved sofas mirror the coastline. Porthole windows echo the nautical spirit of the coast. Every piece of furniture has been crafted by local artisans.</p><div class="btn-group"><a href="#" class="btn-outline" onclick="showPage('suites');return false">Explore the Suites <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a><a href="#" class="btn-primary" onclick="showPage('contact');return false">Inquire</a></div></div>
-    <div class="intro-image reveal"><img src="images/compressed_DSCF4499.jpg" alt="Exterior"></div>
-  </div></section>
-  <div class="dual-image"><div class="dual-image-item"><img src="images/compressed_DSC01602.jpg" alt="Living day"></div><div class="dual-image-item"><img src="images/compressed_DSC02269.jpg" alt="Living night"></div></div>
-  <section class="section"><div class="intro" style="direction:rtl"><div class="intro-text reveal" style="direction:ltr;padding-left:40px;padding-right:0"><p class="section-eyebrow">Common Spaces</p><h2 class="section-title">Where conversations<br><em>unfold naturally</em></h2><p class="section-body">The heart of Casa Copal is its grand living room — a sculptural space with a curving sofa, porthole windows, and a fully stocked bar. The teppanyaki dining table seats fourteen for intimate chef-led experiences.</p><div class="btn-group"><a href="#" class="btn-outline" onclick="showPage('gallery');return false">View Gallery <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div></div><div class="intro-image reveal" style="direction:ltr"><img src="images/compressed_DSC09821.jpg" alt="Living"></div></div></section>
-  <section class="section amenities"><div class="amenities-inner">
-    <div class="amenities-header reveal"><p class="section-eyebrow">Spaces</p><h2 class="section-title">Every corner tells<br><em>a different story</em></h2></div>
-    <div class="amenities-images reveal"><div class="am-img"><img src="images/compressed_DSC09861.jpg" alt="Dining bar"></div><div class="am-img"><img src="images/compressed_DSC02051.jpg" alt="Sauna"></div><div class="am-img"><img src="images/compressed_DSC02137.jpg" alt="Fire pit"></div></div>
-    <div class="page-nav" style="border-top-color:rgba(242,238,235,.1)"><a href="#" class="page-nav-item" onclick="showPage('home');return false"><span style="color:rgba(242,238,235,.4)">Previous</span><strong>← Home</strong></a><a href="#" class="page-nav-item" onclick="showPage('suites');return false"><span style="color:rgba(242,238,235,.4)">Next</span><strong>Suites →</strong></a></div>
-  </div></section>
-</div>
-
-<!-- ══════ SUITE DETAILS ══════ -->
-<div class="page-section" id="page-suite1"><div style="height:100px"></div><section class="section"><div class="suite-detail"><a href="#" class="text-link suite-back" onclick="showPage('suites');return false"><svg width="20" height="12" viewBox="0 0 20 12" fill="none" style="transform:rotate(180deg)"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg> All Suites</a><div class="suite-detail-hero reveal"><img src="images/compressed_DSC03768.jpg" alt="Suite One"></div><div class="suite-detail-grid"><div class="reveal"><p class="section-eyebrow">Suite 01</p><h2 class="section-title">Suite One</h2><p class="section-body" style="margin-top:24px">Dressed in indigo blue, Suite One opens directly onto a private terrace with unobstructed Pacific views. Hand-embroidered Mexican textiles, artisanal ratán pendant lamps, and a marble-top writing desk facing the sea.</p><p class="section-body" style="margin-top:16px">King Bed · Ocean View · Private Terrace · Ensuite Bathroom · Air Conditioning · Smart TV</p><div class="btn-group"><a href="#" class="btn-primary" onclick="showPage('contact');return false">Book This Suite <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div></div><div class="suite-detail-images reveal"><div class="sd-img"><img src="images/compressed_DSC03777.jpg" alt="S1-2"></div><div class="sd-img"><img src="images/compressed_DSC03794.jpg" alt="S1-3"></div></div></div></div></section></div>
-
-<div class="page-section" id="page-suite2"><div style="height:100px"></div><section class="section"><div class="suite-detail"><a href="#" class="text-link suite-back" onclick="showPage('suites');return false"><svg width="20" height="12" viewBox="0 0 20 12" fill="none" style="transform:rotate(180deg)"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg> All Suites</a><div class="suite-detail-hero reveal"><img src="images/compressed_DSC04245.jpg" alt="Suite Two"></div><div class="suite-detail-grid"><div class="reveal"><p class="section-eyebrow">Suite 02</p><h2 class="section-title">Suite Two</h2><p class="section-body" style="margin-top:24px">Emerald green defines this serene retreat. A daybed nook with illuminated wall niches, curated ceramics, and a sculptural mushroom lamp. Floor-to-ceiling wood-framed windows reveal palapa rooftops and the Pacific beyond.</p><p class="section-body" style="margin-top:16px">King Bed · Ocean View · Private Terrace · Ensuite Bathroom · Air Conditioning · Smart TV</p><div class="btn-group"><a href="#" class="btn-primary" onclick="showPage('contact');return false">Book This Suite <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div></div><div class="suite-detail-images reveal"><div class="sd-img"><img src="images/compressed_DSC03706.jpg" alt="S2-2"></div><div class="sd-img"><img src="images/compressed_DSC01397.jpg" alt="Bathroom"></div></div></div></div></section></div>
-
-<div class="page-section" id="page-suite3"><div style="height:100px"></div><section class="section"><div class="suite-detail"><a href="#" class="text-link suite-back" onclick="showPage('suites');return false"><svg width="20" height="12" viewBox="0 0 20 12" fill="none" style="transform:rotate(180deg)"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg> All Suites</a><div class="suite-detail-hero reveal"><img src="images/compressed_DSC03889.jpg" alt="Suite Three"></div><div class="suite-detail-grid"><div class="reveal"><p class="section-eyebrow">Suite 03</p><h2 class="section-title">Suite Three</h2><p class="section-body" style="margin-top:24px">A coral-pink arched doorway marks the entrance. Rustic wooden headboard, hand-embroidered linens with red accents, and a woven armchair invite total relaxation.</p><p class="section-body" style="margin-top:16px">King Bed · Garden View · Private Terrace · Ensuite Bathroom · Air Conditioning · Smart TV</p><div class="btn-group"><a href="#" class="btn-primary" onclick="showPage('contact');return false">Book This Suite <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div></div><div class="suite-detail-images reveal"><div class="sd-img"><img src="images/compressed_DSC03924.jpg" alt="S3-2"></div><div class="sd-img"><img src="images/compressed_DSC03889.jpg" alt="S3-3"></div></div></div></div></section></div>
-
-<div class="page-section" id="page-suite4"><div style="height:100px"></div><section class="section"><div class="suite-detail"><a href="#" class="text-link suite-back" onclick="showPage('suites');return false"><svg width="20" height="12" viewBox="0 0 20 12" fill="none" style="transform:rotate(180deg)"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg> All Suites</a><div class="suite-detail-hero reveal"><img src="images/compressed_DSC04179.jpg" alt="Suite Four"></div><div class="suite-detail-grid"><div class="reveal"><p class="section-eyebrow">Suite 04</p><h2 class="section-title">Suite Four</h2><p class="section-body" style="margin-top:24px">The golden master suite. Amber and gold textiles complement the Copal brand identity. Curved walls create an organic sanctuary. A writing desk faces the full Pacific panorama.</p><p class="section-body" style="margin-top:16px">King Bed · Ocean View · Private Terrace · Daybed · Writing Desk · Ensuite · AC · Smart TV</p><div class="btn-group"><a href="#" class="btn-primary" onclick="showPage('contact');return false">Book This Suite <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div></div><div class="suite-detail-images reveal"><div class="sd-img"><img src="images/compressed_DSC09731.jpg" alt="S4-2"></div><div class="sd-img"><img src="images/compressed_DSC09733.jpg" alt="S4-3"></div><div class="sd-img"><img src="images/compressed_DSC041792.jpg" alt="S4-4"></div><div class="sd-img"><img src="images/compressed_DSC04179.jpg" alt="S4-5"></div></div></div></div></section></div>
-
-<div class="page-section" id="page-suite5"><div style="height:100px"></div><section class="section"><div class="suite-detail"><a href="#" class="text-link suite-back" onclick="showPage('suites');return false"><svg width="20" height="12" viewBox="0 0 20 12" fill="none" style="transform:rotate(180deg)"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg> All Suites</a><div class="suite-detail-hero reveal"><img src="images/compressed_DSC09760.jpg" alt="Suite Five"></div><div class="suite-detail-grid"><div class="reveal"><p class="section-eyebrow">Suite 05</p><h2 class="section-title">Suite Five</h2><p class="section-body" style="margin-top:24px">Sage green and olive tones bring the jungle indoors. Curved boucle armchair, ceramic art in wall niches, terracotta lamps, and a private terrace with ocean views.</p><p class="section-body" style="margin-top:16px">King Bed · Ocean View · Private Terrace · Ensuite Bathroom · Air Conditioning · Smart TV</p><div class="btn-group"><a href="#" class="btn-primary" onclick="showPage('contact');return false">Book This Suite <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div></div><div class="suite-detail-images reveal"><div class="sd-img"><img src="images/compressed_DSC09791.jpg" alt="S5-2"></div><div class="sd-img"><img src="images/compressed_DSC09760.jpg" alt="S5-3"></div></div></div></div></section></div>
-
-<div class="page-section" id="page-suite8"><div style="height:100px"></div><section class="section"><div class="suite-detail"><a href="#" class="text-link suite-back" onclick="showPage('suites');return false"><svg width="20" height="12" viewBox="0 0 20 12" fill="none" style="transform:rotate(180deg)"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg> All Suites</a><div class="suite-detail-hero reveal"><img src="images/compressed_DSC01490.jpg" alt="Suite Eight"></div><div class="suite-detail-grid"><div class="reveal"><p class="section-eyebrow">Suite 08</p><h2 class="section-title">Suite Eight</h2><p class="section-body" style="margin-top:24px">A white arched headboard and porthole window define this charming retreat. Yellow-striped Mexican textiles with handmade pompom details. Opens to a private rooftop terrace with circular daybed.</p><p class="section-body" style="margin-top:16px">King Bed · Ocean View · Rooftop Terrace · Ensuite Bathroom · Air Conditioning · Smart TV</p><div class="btn-group"><a href="#" class="btn-primary" onclick="showPage('contact');return false">Book This Suite <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div></div><div class="suite-detail-images reveal"><div class="sd-img"><img src="images/compressed_DSC01496.jpg" alt="S8-2"></div><div class="sd-img"><img src="images/compressed_DSC01535.jpg" alt="S8-3"></div><div class="sd-img"><img src="images/compressed_DSC01544.jpg" alt="S8-rooftop"></div><div class="sd-img"><img src="images/compressed_DSC01490.jpg" alt="S8-4"></div></div></div></div></section></div>
-
-<!-- ══════ CONTACT / INQUIRE ══════ -->
+<!-- ══════════════════════════════════════════ CONTACT / INQUIRE ══════════════════════════════════════════ -->
 <div class="page-section" id="page-contact">
-  <div class="contact-hero"><img src="images/compressed_DJI_20260331192155_0229_D.jpg" alt="Casa Copal aerial"><div class="contact-hero-overlay"></div><div class="contact-hero-content"><p class="hero-eyebrow" style="animation-delay:0s;opacity:0;transform:translateY(20px);animation:fadeUp .8s .2s var(--ease) forwards">Inquire</p><h2 style="opacity:0;transform:translateY(20px);animation:fadeUp .8s .4s var(--ease) forwards">Let's begin your<br><em>Careyes story</em></h2><p style="opacity:0;transform:translateY(20px);animation:fadeUp .8s .6s var(--ease) forwards">For reservations, events, or simply to learn more</p></div></div>
+  <div class="mini-hero"><img src="images/compressed_DJI_20260331192155_0229_D.jpg" alt="Casa Copal aerial"><div class="mini-hero-overlay"></div><div class="mini-hero-content"><p class="hero-eyebrow">Inquire</p><h2>Let's begin your<br><em>Careyes story</em></h2><p>For reservations, events, or simply to learn more</p></div></div>
+
   <div class="contact-form-section">
-    <div class="reveal" style="text-align:center;margin-bottom:40px"><p class="section-eyebrow">Get in Touch</p><h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.4rem)">Tell us about your <em>ideal stay</em></h2></div>
-    <div class="contact-form reveal">
-      <div class="form-group"><label class="form-label">First Name</label><input class="form-input" type="text" placeholder="Your first name"></div>
-      <div class="form-group"><label class="form-label">Last Name</label><input class="form-input" type="text" placeholder="Your last name"></div>
-      <div class="form-group"><label class="form-label">Email</label><input class="form-input" type="email" placeholder="your@email.com"></div>
-      <div class="form-group"><label class="form-label">Phone</label><input class="form-input" type="tel" placeholder="+1 (000) 000-0000"></div>
-      <div class="form-group"><label class="form-label">Check-in Date</label><input class="form-input" type="date"></div>
-      <div class="form-group"><label class="form-label">Check-out Date</label><input class="form-input" type="date"></div>
-      <div class="form-group"><label class="form-label">Number of Guests</label><select class="form-select"><option>Select</option><option>1-4 guests</option><option>5-8 guests</option><option>9-12 guests</option><option>13-18 guests</option></select></div>
-      <div class="form-group"><label class="form-label">Occasion</label><select class="form-select"><option>Select</option><option>Vacation</option><option>Wedding</option><option>Corporate Retreat</option><option>Celebration</option><option>Other</option></select></div>
-      <div class="form-group full"><label class="form-label">Special Requests</label><textarea class="form-textarea" placeholder="Tell us about your ideal experience — dietary preferences, activities, special occasions..."></textarea></div>
-      <div class="form-submit"><a href="#" class="btn-primary" style="width:100%;justify-content:center">Send Inquiry <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></a></div>
+    <div class="reveal" style="text-align:center;margin-bottom:40px" id="form-container">
+      <p class="section-eyebrow">Get in Touch</p>
+      <h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.4rem)">Tell us about your <em>ideal stay</em></h2>
+      <p class="section-body" style="margin:16px auto 0;text-align:center">Casa Copal is available exclusively as a full-property rental.</p>
     </div>
-    <div style="text-align:center;margin-top:60px;padding-top:40px;border-top:1px solid rgba(26,24,20,.08)" class="reveal">
-      <p style="font-family:var(--font-body);font-size:.75rem;color:var(--text-secondary);margin-bottom:4px">Or reach us directly</p>
-      <p style="font-family:var(--font-body);font-size:.85rem;color:var(--amber);font-weight:500">hello@casacopal.com · +52 (315) 000 0000</p>
-      <p style="font-family:var(--font-body);font-size:.75rem;color:var(--text-secondary);margin-top:4px">@casacopal_careyes</p>
+
+    <form id="inquire-form" action="https://formspree.io/f/xjkvqpwl" method="POST" class="contact-form reveal">
+      <input type="hidden" name="_cc" value="hellowdstudio@gmail.com">
+      <input type="hidden" name="_subject" value="New Inquiry — Casa Copal">
+      <div class="form-group"><label class="form-label">First Name</label><input class="form-input" type="text" name="first_name" placeholder="Your first name" required></div>
+      <div class="form-group"><label class="form-label">Last Name</label><input class="form-input" type="text" name="last_name" placeholder="Your last name" required></div>
+      <div class="form-group"><label class="form-label">Email</label><input class="form-input" type="email" name="email" placeholder="your@email.com" required></div>
+      <div class="form-group"><label class="form-label">Phone</label><input class="form-input" type="tel" name="phone" placeholder="+1 (000) 000-0000"></div>
+      <div class="form-group"><label class="form-label">Check-in Date</label><input class="form-input" type="date" name="checkin"></div>
+      <div class="form-group"><label class="form-label">Check-out Date</label><input class="form-input" type="date" name="checkout"></div>
+      <div class="form-group"><label class="form-label">Number of Guests</label><select class="form-select" name="guests"><option value="">Select</option><option>1–4 guests</option><option>5–8 guests</option><option>9–12 guests</option><option>13–18 guests</option></select></div>
+      <div class="form-group"><label class="form-label">Occasion</label><select class="form-select" name="occasion"><option value="">Select</option><option>Vacation</option><option>Wedding</option><option>Corporate Retreat</option><option>Celebration</option><option>Other</option></select></div>
+      <div class="form-group full"><label class="form-label">Special Requests</label><textarea class="form-textarea" name="message" placeholder="Tell us about your ideal experience — dietary preferences, activities, special occasions..."></textarea></div>
+      <div class="form-submit"><button type="submit" class="btn-primary" style="width:100%;justify-content:center;cursor:pointer;font-family:var(--font-body)">Send Inquiry <svg class="arrow-svg" width="16" height="10" viewBox="0 0 20 12" fill="none"><path d="M0 6h18m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg></button></div>
+    </form>
+
+    <div class="form-success" id="form-success">
+      <h3>Thank you for your inquiry</h3>
+      <p>We've received your message and will be in touch within 24 hours to begin planning your stay at Casa Copal.</p>
+    </div>
+
+    <div style="text-align:center;margin-top:60px;padding-top:40px;border-top:1px solid rgba(26,24,20,0.08)" class="reveal">
+      <p style="font-family:var(--font-body);font-size:0.75rem;color:var(--text-secondary);margin-bottom:8px">Or reach us directly</p>
+      <p style="font-family:var(--font-body);font-size:0.9rem;font-weight:500"><a href="mailto:nicolai@guess.com" style="color:var(--amber);text-decoration:none">hello@casacopal.com</a></p>
+      <p style="font-family:var(--font-body);font-size:0.85rem;color:var(--text-secondary);margin-top:4px"><a href="tel:+13109904414" style="color:var(--text-secondary);text-decoration:none">+1 (310) 990-4414</a></p>
     </div>
   </div>
 </div>
 
-<!-- ══════ FOOTER ══════ -->
+<!-- ══════════════════════════════════════════ FOOTER ══════════════════════════════════════════ -->
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
       <div class="footer-brand">
         <img src="images/logo.png" alt="Casa Copal" style="height:80px">
         <p class="footer-tagline">Where the jungle whispers to the sea</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+        </div>
       </div>
       <div class="footer-columns">
-        <div class="footer-col"><p class="footer-col-title">Explore</p><a href="#" onclick="showPage('house');return false">The House</a><a href="#" onclick="showPage('suites');return false">Suites</a><a href="#" onclick="showPage('gastronomy');return false">Gastronomy</a><a href="#" onclick="showPage('gallery');return false">Gallery</a><a href="#" onclick="showPage('careyes');return false">Careyes</a></div>
-        <div class="footer-col"><p class="footer-col-title">Contact</p><a href="mailto:hello@casacopal.com">hello@casacopal.com</a><p>+52 (315) 000 0000</p><a href="#">@casacopal_careyes</a></div>
+        <div class="footer-col"><p class="footer-col-title">Explore</p><a href="#" onclick="showPage('house');return false">The House</a><a href="#" onclick="showPage('spaces');return false">Spaces</a><a href="#" onclick="showPage('suites');return false">Suites</a><a href="#" onclick="showPage('gastronomy');return false">Gastronomy</a><a href="#" onclick="showPage('gallery');return false">Gallery</a><a href="#" onclick="showPage('careyes');return false">Careyes</a></div>
+        <div class="footer-col"><p class="footer-col-title">Contact</p><a href="mailto:nicolai@guess.com">hello@casacopal.com</a><a href="tel:+13109904414">+1 (310) 990-4414</a><a href="#">@casacopal</a></div>
         <div class="footer-col"><p class="footer-col-title">Resources</p><a href="#">Download Brochure</a><a href="#" onclick="showPage('contact');return false">Inquire</a><a href="#">Privacy Policy</a></div>
       </div>
     </div>
@@ -305,4 +430,5 @@
 </footer>
 
 <script src="js/main.js"></script>
-</body></html>
+</body>
+</html>

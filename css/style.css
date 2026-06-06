@@ -321,7 +321,7 @@ footer { background: var(--black); border-top: 1px solid rgba(242,238,235,0.06);
   .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
   .amber-divider { padding: 64px 24px; }
   .hero-scroll, .cursor-dot { display: none; }
-  .gallery-page-grid, .gastro-grid { columns: 1; }
+  .gallery-page-grid { columns:2;gap:8px }, .gastro-grid { columns: 1; }
   .amenities-images, .suite-detail-images, .space-images-grid { grid-template-columns: 1fr; }
   .page-nav { flex-direction: column; gap: 24px; text-align: center; }
   .contact-form-section { padding: 60px 24px; }

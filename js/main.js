@@ -116,5 +116,70 @@ if (form) {
   });
 }
 
+/* ══════════ CAROUSELS ══════════ */
+(function () {
+  const EASE = 'cubic-bezier(0.25,0.46,0.45,0.94)';
+
+  /* ---- HERO ---- */
+  const hero = document.getElementById('heroCarousel');
+  if (hero) {
+    const slides = [...hero.querySelectorAll('.hero-slide')];
+    let i = Math.max(0, slides.findIndex(s => s.classList.contains('active')));
+    let t = null;
+    const show = n => {
+      i = (n + slides.length) % slides.length;
+      slides.forEach((s, k) => s.classList.toggle('active', k === i));
+    };
+    const play = () => { clearInterval(t); t = setInterval(() => show(i + 1), 6000); };
+    const step = d => { show(i + d); play(); };
+
+    document.getElementById('heroNext')?.addEventListener('click', () => step(1));
+    document.getElementById('heroPrev')?.addEventListener('click', () => step(-1));
+    const sec = hero.closest('.hero');
+    sec?.addEventListener('mouseenter', () => clearInterval(t));
+    sec?.addEventListener('mouseleave', play);
+    show(i); play();
+  }
+
+  /* ---- GALLERY STRIP ---- */
+  const inner = document.querySelector('.gallery-strip-inner');
+  if (inner) {
+    const items = [...inner.children];
+    const N = Math.floor(items.length / 2); // originales (mitad = duplicados)
+    let idx = 0, t = null, busy = false;
+
+    const go = (n, animate = true) => {
+      idx = n;
+      inner.style.transition = animate ? `transform .9s ${EASE}` : 'none';
+      inner.style.transform = `translateX(-${items[idx].offsetLeft}px)`;
+    };
+    const next = () => { if (!busy) { busy = true; go(idx + 1); } };
+    const prev = () => {
+      if (busy) return;
+      busy = true;
+      if (idx === 0) { go(N, false); requestAnimationFrame(() => requestAnimationFrame(() => go(N - 1))); }
+      else go(idx - 1);
+    };
+
+    inner.addEventListener('transitionend', e => {
+      if (e.propertyName !== 'transform') return;
+      busy = false;
+      if (idx >= N) go(idx - N, false); // salto invisible → loop infinito
+    });
+
+    const play = () => { clearInterval(t); t = setInterval(next, 3500); };
+    const stop = () => clearInterval(t);
+
+    document.getElementById('stripNext')?.addEventListener('click', () => { next(); play(); });
+    document.getElementById('stripPrev')?.addEventListener('click', () => { prev(); play(); });
+    const strip = inner.closest('.gallery-strip');
+    strip?.addEventListener('mouseenter', stop);
+    strip?.addEventListener('mouseleave', play);
+    window.addEventListener('resize', () => go(idx, false));
+
+    go(0, false); play();
+  }
+})();
+
 // Initialize
 initReveals();

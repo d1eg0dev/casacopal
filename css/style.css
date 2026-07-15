@@ -327,3 +327,25 @@ footer { background: var(--black); border-top: 1px solid rgba(242,238,235,0.06);
   .contact-form-section { padding: 60px 24px; }
   .btn-group { flex-direction: column; }
 }
+
+/* ══════════ CAROUSEL CONTROLS ══════════ */
+.car-arrow{position:absolute;z-index:6;width:52px;height:52px;border-radius:50%;border:1px solid rgba(242,238,235,.35);background:rgba(26,24,20,.35);backdrop-filter:blur(6px);color:var(--sand);display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0;opacity:0;transition:opacity .4s var(--ease),background .4s var(--ease),border-color .4s var(--ease)}
+.car-arrow svg{width:17px;height:11px}
+.car-arrow:hover{background:var(--amber);border-color:var(--amber)}
+.car-arrow.prev{left:24px}
+.car-arrow.next{right:24px}
+.hero:hover .car-arrow,.gallery-strip:hover .car-arrow{opacity:1}
+
+/* Hero */
+.hero .car-arrow{top:50%;transform:translateY(-50%)}
+
+/* Gallery strip → paso a paso */
+.gallery-strip{position:relative}
+.gallery-strip .car-arrow{top:120px;transform:translateY(-50%)}
+.gallery-strip-inner{animation:none;will-change:transform}
+
+@media(max-width:768px){
+  .car-arrow{width:42px;height:42px}
+  .car-arrow.prev{left:12px}.car-arrow.next{right:12px}
+  .car-arrow{opacity:1}
+}

@@ -183,3 +183,69 @@ if (form) {
 
 // Initialize
 initReveals();
+
+/* ══════════ LIGHTBOX ══════════ */
+(function () {
+  const box = document.getElementById('lightbox');
+  if (!box) return;
+  const img = document.getElementById('lbImg');
+  const cap = document.getElementById('lbCap');
+  const SEL = '.gallery-page-item img, .gallery-strip-item img, .sd-img img';
+  let group = [], i = 0;
+
+  const render = () => {
+    box.classList.remove('ready');
+    const el = group[i];
+    const pre = new Image();
+    pre.onload = () => { img.src = pre.src; img.alt = el.alt || ''; box.classList.add('ready'); };
+    pre.src = el.currentSrc || el.src;
+    cap.textContent = el.alt ? `${el.alt} — ${i + 1} / ${group.length}` : `${i + 1} / ${group.length}`;
+  };
+  const open = el => {
+    const page = el.closest('.page-section') || document;
+    // agrupa solo las fotos de la misma zona; en el strip ignora las duplicadas
+    let all = [...page.querySelectorAll(SEL)];
+    if (el.closest('.gallery-strip-item')) {
+      const seen = new Set();
+      all = all.filter(n => n.closest('.gallery-strip-item') && !seen.has(n.src) && seen.add(n.src));
+    } else {
+      all = all.filter(n => !n.closest('.gallery-strip-item'));
+    }
+    group = all;
+    i = Math.max(0, group.indexOf(el));
+    render();
+    box.classList.add('open');
+    box.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  };
+  const close = () => {
+    box.classList.remove('open', 'ready');
+    box.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+  const step = d => { i = (i + d + group.length) % group.length; render(); };
+
+  document.addEventListener('click', e => {
+    const el = e.target.closest(SEL);
+    if (el) { e.preventDefault(); open(el); }
+  });
+  document.getElementById('lbClose').addEventListener('click', close);
+  document.getElementById('lbNext').addEventListener('click', e => { e.stopPropagation(); step(1); });
+  document.getElementById('lbPrev').addEventListener('click', e => { e.stopPropagation(); step(-1); });
+  box.addEventListener('click', e => { if (e.target === box || e.target.closest('.lb-figure')) close(); });
+  document.addEventListener('keydown', e => {
+    if (!box.classList.contains('open')) return;
+    if (e.key === 'Escape') close();
+    if (e.key === 'ArrowRight') step(1);
+    if (e.key === 'ArrowLeft') step(-1);
+  });
+  // swipe mobile
+  let x0 = null;
+  box.addEventListener('touchstart', e => x0 = e.touches[0].clientX, { passive: true });
+  box.addEventListener('touchend', e => {
+    if (x0 === null) return;
+    const dx = e.changedTouches[0].clientX - x0;
+    if (Math.abs(dx) > 50) step(dx < 0 ? 1 : -1);
+    x0 = null;
+  });
+})();

@@ -77,7 +77,15 @@ function initReveals() {
       }
     });
   }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-  reveals.forEach(el => observer.observe(el));
+  reveals.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    const yaVisible = rect.top < window.innerHeight && rect.bottom > 0;
+    if (yaVisible) {
+      el.classList.add('visible');
+    } else {
+      observer.observe(el);
+    }
+  });
 }
 
 // Form handling with Formspree
